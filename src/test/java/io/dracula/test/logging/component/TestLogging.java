@@ -12,7 +12,7 @@ public class TestLogging {
     @Test
     public void test(){
         MDC.put("some-key", "world");
-        logger.info("hello");
+        logger.info("format {} {id}","hello", "world");
     }
 
 }
